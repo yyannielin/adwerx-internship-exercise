@@ -1,5 +1,8 @@
+
 <h1>New Postal Code</h1>
 
-<%= render 'form', postal_code: @postal_code %>
+<%= react_component("PostalCodeForm", { token: form_authenticity_token }) %>
 
 <%= link_to 'Back', postal_codes_path %>
+
+
